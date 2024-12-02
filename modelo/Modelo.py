@@ -7,7 +7,7 @@ import tensorflow as tf
 from tensorflow.keras.models import Sequential
 from tensorflow.keras.layers import Dense
 
-data = pd.read_csv('/data/sensor_data.csv')
+data = pd.read_csv('data/sensor_data.csv')
 
 # Descartamos la columna 'id' (suponiendo que es la primera columna)
 ecg_signal = data['value'].to_numpy()
